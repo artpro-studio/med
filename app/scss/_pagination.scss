@@ -1,0 +1,51 @@
+.pagination{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  a{
+    font-weight: normal;
+    font-size: 0.9em;
+    color: $grey;
+    margin: 0 13px;
+  }
+  &__numbers{
+    display: flex;
+    align-items: center;
+    a{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 3px;
+      &.active{
+        background-color: $green;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px){
+  .pagination{
+    margin: 15px 0;
+    a{
+      font-size: 1.1em;
+    }
+    &__nav{
+      order: 1;
+    }
+    &__numbers{
+      width: 100%;
+      order: 0;
+      justify-content: center;
+      margin-bottom: 15px;
+      .number{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

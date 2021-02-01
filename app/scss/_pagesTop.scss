@@ -1,0 +1,52 @@
+.breadcrumbs{
+  margin: 10px 0;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      font-size: 0.9em;
+      a{
+        color: $grey;
+      }
+      span{
+        color: $green;
+      }
+      i{
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.pages_top{
+  &.mb{
+    margin-bottom: 30px;
+  }
+  &__title{
+    margin-bottom: 15px;
+    h1{
+      font-weight: 800;
+      font-size: 2em;
+    }
+  }
+  p{
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+}
+@media screen and (max-width: 650px){
+  .pages_top{
+    &__title{
+      margin-bottom: 10px;
+      h1{
+        font-size: 1.8em;
+      }
+    }
+    p{
+      font-size: 1em;
+    }
+  }
+}

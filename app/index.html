@@ -3,34 +3,302 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
-	<meta name="description" content="">
+    <title>OptimizedHTML 4</title>
+    <meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="css/main.min.css">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
+<header class="header js--header">
+    <div class="top-header">
+        <div class="container">
+            <div class="row top-header__content justify-content-md-between">
+                <div class="col-auto top-header__address">
+                    <img src="img/map.svg" alt="map" title="Адрес">г. Москва
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-auto top-header__phone">
+                    <img src="img/telephone.svg" alt="phone" title="Номер">
+                    <a href="tel:+74950980091" class="b-u" title="Позвонить">+7 (495) 098-00-91</a>,
+                    <a href="tel:+78005511216" class="b-u" title="Позвонить">+7 (800) 551-12-16</a>
+                </div>
+                <div class="col-lg-2 col-md-auto">
+                    <a href="" class="top-header__request" title="Заказать звонок">Заказать звонок</a>
+                </div>
+                <div class="col-lg-2 col-md-auto">
+                    <a href="mailto:info@profmedc.ru" class="top-header__mail" title="Написать">
+                        <img src="img/email.svg" alt="mail" class="Почта">
+                        <span class="b-u">info@profmedc.ru</span>
+                    </a>
+                </div>
+                <div class="col-lg-auto col-12 top-header__authorize">
+                    <img src="img/profile-user.svg" alt="profile" title="Авторизация">
+                    <a href="" class="b-u" title="Вход">Вход</a>
+                    /
+                    <a href="" class="b-u" title="Регистрация">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-content">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto d-block d-lg-none">
+                    <button class="header__burger js--burger"><span></span></button>
+                </div>
+                <div class="col-auto">
+                    <a href="#" class="header__logo" title="ПрофМедЦентр">
+                        <img src="img/logo.svg" alt="logo">
+                        <span class="">
+                            <span class="title">Проф<span>МедЦентр</span></span>
+                            <span class="description">Лучшие санатории страны</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="header-content__menu">
+                        <nav>
+                            <ul class="d-flex justify-content-xl-between">
+                                <li><a href="/" class="active" title="Главная">Главная</a></li>
+                                <li><a href="/" title="Новости">Новости</a></li>
+                                <li><a href="/" title="Статьи">Статьи</a></li>
+                                <li><a href="/" title="Каталог">Каталог</a></li>
+                                <li><a href="/" title="О компании">О компании</a></li>
+                                <li><a href="/" title="Контакты">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="header-content__search">
+                        <a href="" title="Поиск">
+                            <img src="img/search.svg" class="mobile-search js--mobile-search" alt=""></a>
+                        <form action="" class="form-search js--mobile-search-form">
+                            <div class="field">
+                                <input type="text" placeholder="Поиск санатория">
+                            </div>
+                            <button type="submit">
+                                <img src="img/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile_header js--mobile_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-block d-lg-none">
+                    <button class="header__burger js--burger"><span></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-auto">
+                <a href="#" class="header__logo" title="ПрофМедЦентр">
+                    <img src="img/logo.svg" alt="logo">
+                    <span class="">
+                        <span class="title">Проф<span>МедЦентр</span></span>
+                        <span class="description">Лучшие санатории страны</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mobile_header__menu">
+                    <nav>
+                        <ul>
+                            <li><a href="/" class="active b-u" title="Главная">Главная</a></li>
+                            <li><a href="/" class="b-u" title="Новости">Новости</a></li>
+                            <li><a href="/" class="b-u" title="Статьи">Статьи</a></li>
+                            <li><a href="/" class="b-u" title="Каталог">Каталог</a></li>
+                            <li><a href="/" class="b-u" title="О компании">О компании</a></li>
+                            <li><a href="/" class="b-u" title="Контакты">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-column mobile_header__contacts align-items-center">
+            <div class="col-auto address">
+                <img src="img/map.svg" alt="map" title="Адрес">г. Москва
+            </div>
+            <div class="col-auto phone">
+                <img src="img/telephone.svg" alt="phone" title="Номер">
+                <a href="tel:+74950980091" class="b-u" title="Позвонить">+7 (495) 098-00-91</a>,
+                <a href="tel:+78005511216" class="b-u" title="Позвонить">+7 (800) 551-12-16</a>
+            </div>
+            <div class="col-auto request">
+                <a href="" title="Заказать звонок">Заказать звонок</a>
+            </div>
+            <div class="col-auto mail">
+                <a href="mailto:info@profmedc.ru" title="Написать">
+                    <img src="img/email.svg" alt="mail" class="Почта">
+                    <span class="b-u">info@profmedc.ru</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<!-- Custom HTML -->
+<div class="wrapper">
+    <section class="head">
+        <div class="container">
+            <div class="head__content">
+                <div class="head__slider js--head__slider">
+                    <div class="head__slide">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="info">
+                                    <p class="sub-title">Санаторий</p>
+                                    <h1 class="title">Эко-курорт</h1>
+                                    <p class="description">Лучшие курорты: Республика Алтай, Чемальский район, с.
+                                        Чемал</p>
+                                    <a href="" class="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="main-img" style="background-image: url('img/mainBg.png')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head__slide">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="info">
+                                    <p class="sub-title">Санаторий</p>
+                                    <h1 class="title">Эко-курорт</h1>
+                                    <p class="description">Лучшие курорты: Республика Алтай, Чемальский район, с.
+                                        Чемал</p>
+                                    <a href="" class="button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="main-img" style="background-image: url('img/mainBg.png')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="next-arrow js--head-slider-next-arrow"><img src="img/nextArrow.svg"
+                                                                                                 alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="search main-search">
+        <div class="container">
+            <div class="search__content">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title">Подбор санатория</p>
+                    </div>
+                </div>
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-auto col-md-4 col-sm-6 col-12">
+                        <div class="select-field">
+                            <label for="sanatorium">Санатории:</label>
+                            <div class="select">
+                                <select name="sanatorium" id="sanatorium">
+                                    <option value="null" selected>Любая</option>
+                                    <option value="1">Вариант 1</option>
+                                    <option value="2">Вариант 2</option>
+                                </select>
+                                <img src="img/downArrow.svg" alt="" class="select-arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-md-4 col-sm-6 col-12">
+                        <div class="select-field">
+                            <label for="specialization">Специализация:</label>
+                            <div class="select">
+                                <select name="specialization" id="specialization">
+                                    <option value="null" selected>Любая</option>
+                                    <option value="1">Вариант 1</option>
+                                    <option value="2">Вариант 2</option>
+                                </select>
+                                <img src="img/downArrow.svg" alt="" class="select-arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-md-4 col-sm-6 col-12 mr-xl-2">
+                        <div class="select-field">
+                            <label for="count">Количество людей</label>
+                            <div class="select">
+                                <select name="count" id="count">
+                                    <option value="1">2 взрослых и 1 ребенок</option>
+                                    <option value="2">2 взрослых</option>
+                                </select>
+                                <img src="img/downArrow.svg" alt="" class="select-arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-md-4 col-sm-6 col-12">
+                        <div class="input-field">
+                            <label for="start-date">Дата начало:</label>
+                            <input type="date" id="start-date" name="start_date" value="2020-11-10">
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-md-4 col-sm-6 col-12">
+                        <div class="input-field">
+                            <label for="end-date">Дата окончания:</label>
+                            <input type="date" id="end-date" name="end_date" value="2020-11-10">
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="button">Подробнее</a>
+            </div>
+        </div>
+    </section>
+    <section class="sanatoriums">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-4">
+                    <h3 class="section-title">Санатории</h3>
+                    <p class="section-description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </p>
+                </div>
+               <div class="col-auto">
+                   <a href="" class="link-arrow b-u">Посмотреть все</a>
+               </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <div class="sanatoriums__item" style="background-image:url('img/sanatoriums/1.png');">
+                        <div class="info">
+                            <p class="title">Ай-Даниль</p>
+                            <p class="description">Санаторий крыма</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
-	<script src="js/scripts.min.js"></script>
+<footer class="footer">
+
+</footer>
+
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>

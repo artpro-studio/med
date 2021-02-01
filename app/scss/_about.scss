@@ -1,0 +1,22 @@
+.about_pages{
+  &__text{
+    p{
+      font-weight: 300;
+      font-size: 1em;
+      line-height: 140.9%;
+    }
+  }
+  &__gallery{
+    .item{
+      width: 25%;
+      a{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+}

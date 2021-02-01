@@ -1,0 +1,90 @@
+.page404{
+  text-align: center;
+  &__top{
+
+  }
+  h1{
+    font-size: 18em;
+    line-height: 1;
+    font-weight: 900;
+    color: $green;
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  h2{
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  .btn{
+    width: 191px;
+    height: 50px;
+    font-size: 0.9em;
+    margin: 0 auto;
+  }
+  .link{
+    margin-top: 20px;
+    a{
+      color: $grey;
+      position: relative;
+      text-decoration: none;
+      &:hover{
+        &:before{
+          width: 0;
+        }
+      }
+      &:before{
+        content: '';
+        width: 100%;
+        background-color: $grey;
+        height: 1px;
+        position: absolute;
+        top: 105%;
+        left: 0;
+        width: 100%;
+        transition: .4s all;
+      }
+      &:hover{
+        color: $grey;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px){
+  .page404{
+    &__top{
+      h1{
+        font-size: 10em;
+      }
+    }
+    .text{
+      h2{
+        font-size: 1.6em;
+      }
+      p{
+        margin-bottom: 15px;
+      }
+      .btn{
+        font-size: 1.1em;
+        width: 155px;
+        height: 43px;
+      }
+      .link{
+        a{
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
