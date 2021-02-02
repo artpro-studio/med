@@ -71,4 +71,76 @@ $(function () {
         prevArrow: false,
         nextArrow: '.js--head-slider-next-arrow',
     });
+
+    $('.about_pages__gallery').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        arrows:false,
+        dots:true,
+        infinite:false,
+        responsive: [
+            {
+                breakpoint: 650,
+                settings: 'unslick'
+            }
+        ]
+    });
+
+    $('.catalog_detail_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.catalog_detail_slider_nav',
+        responsive: [
+            {
+                breakpoint: 650,
+                settings:{
+                    dots: true
+                }
+            }
+        ]
+    });
+    $('.catalog_detail_slider_nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.catalog_detail_slider',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        variableWidth: true,
+        nextArrow: '.detail_slider_nav.next',
+        prevArrow: '.detail_slider_nav.prev',
+    });
+
+    $('.catalog__item .sliders').each(function (i, node) {
+        $(node).slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            nextArrow: '<button class="catalog__item_nav next"><img src="img/arrow-circle.svg" data-src="img/arrow-circle.svg" alt=""></button>',
+            prevArrow: '<button class="catalog__item_nav prev"><img src="img/arrow-circle.svg" data-src="img/arrow-circle.svg" alt=""></button>',
+        });
+    });
+
+    //Открытие табов
+    $('.tabs_top a').on('click', function (e){
+        let tab = $(this).attr('data-tab');
+        $('.tabs_top a').removeClass('active');
+        $('.tab_section').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_section.' + tab).addClass('active');
+
+        $(".catalog__item .sliders").slick('unslick');
+        $('.catalog__item .sliders').each(function (i, node) {
+            $(node).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                nextArrow: '<button class="catalog__item_nav next"><img src="img/arrow-circle.svg" data-src="img/arrow-circle.svg" alt=""></button>',
+                prevArrow: '<button class="catalog__item_nav prev"><img src="img/arrow-circle.svg" data-src="img/arrow-circle.svg" alt=""></button>',
+            });
+        });
+    });
 });

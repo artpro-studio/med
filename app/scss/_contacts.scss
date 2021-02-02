@@ -1,0 +1,229 @@
+.contacts_page{
+  &__text{
+    a{
+      font-weight: normal;
+      font-size: 0.9em;
+      color: $grey;
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      text-decoration: none;
+      img{
+        height: 20px;
+        width: auto;
+        margin-right: 10px;
+      }
+    }
+    .phones{
+      display: flex;
+      align-items: center;
+      a{
+        margin: 0;
+        margin-right: 5px;
+      }
+      img{
+        height: 20px;
+        width: auto;
+        margin-right: 10px;
+      }
+    }
+    .social{
+      margin-top: 40px;
+      h4{
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 1;
+        margin-bottom: 25px;
+      }
+      &__content{
+        display: flex;
+        align-items: center;
+        a{
+          text-decoration: none;
+          margin: 0 5px;
+          img{
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  &__forms{
+    background: #E8F0F3;
+    border-radius: 5px;
+    padding: 25px;
+    h4{
+      font-weight: bold;
+      font-size: 1.2em;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    p{
+      font-weight: normal;
+      font-size: 0.8em;
+    }
+    form{
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      .field{
+        position: relative;
+        margin-bottom: 20px;
+        width: 50%;
+        padding-right: 20px;
+        &.full{
+          width: 100%;
+        }
+        label{
+          position: absolute;
+          top: 2px;
+          left: 10px;
+          font-weight: normal;
+          font-size: 0.7em;
+          opacity: .6;
+        }
+        input{
+          border-radius: 5px;
+          border: 1px #B1B7B9 solid;
+          background-color: transparent;
+          height: 45px;
+          padding: 17px 10px 5px 10px;
+          outline: transparent;
+          width: 100%;
+          margin-right: 20px;
+          font-weight: 300;
+          font-size: 0.9em;
+          font-family: $default-font;
+        }
+        textarea{
+          width: 100%;
+          max-width: 600%;
+          border-radius: 5px;
+          border: 1px #B1B7B9 solid;
+          background-color: transparent;
+          height: 90px;
+          max-height: 90px;
+          outline: transparent;
+          font-family: $default-font;
+          padding: 17px 10px 5px 10px;
+          font-weight: 300;
+          font-size: 0.9em;
+        }
+      }
+      .button_form{
+        .btn{
+          width: 137px;
+          height: 42px;
+          font-size: 0.9em;
+        }
+        p{
+          font-weight: normal;
+          font-size: 0.8em;
+          line-height: 14px;
+          margin-top: 20px;
+          a{
+            color: $grey;
+            position: relative;
+            text-decoration: none;
+            &:before{
+              content: '';
+              width: 100%;
+              height: 1px;
+              background-color: $grey;
+              position: absolute;
+              top:105%;
+              left: 0;
+              transition: .4s all;
+            }
+            &:hover{
+              color: $grey;
+              &:before{
+                width: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .maps{
+    margin-top: 50px;
+    iframe{
+      width: 100%;
+      border: none;
+      height: 460px;
+    }
+  }
+}
+@media screen and (max-width: 996px){
+  .contacts_page__forms form .field{
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 768px){
+  .contacts_page{
+    &__forms{
+      margin-top: 30px;
+      form{
+        .field{
+          padding-right: 10px;
+          textarea{
+            max-width: 700px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px){
+  .contacts_page{
+    &__text{
+      a{
+        font-size: 1em;
+        margin: 15px 0;
+      }
+      .social{
+        margin-top: 25px;
+        h4{
+          font-size: 1.3em;
+        }
+      }
+    }
+    &__forms{
+      margin-top: 30px;
+      form{
+        .field{
+          padding-right: 0px;
+          width: 100%;
+          margin-bottom: 10px;
+          label{
+            font-size: 0.9em;
+          }
+          input{
+            font-size: 1.1em;
+          }
+          textarea{
+            max-width: 700px;
+            font-size: 1.1em;
+          }
+        }
+        .button_form{
+          .btn{
+            font-size: 1em;
+            width: 118px;
+            height: 35px;
+          }
+          p{
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    .maps{
+      margin-top:30px;
+      iframe{
+        height: 320px;
+      }
+    }
+  }
+}
