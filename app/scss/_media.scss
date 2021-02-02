@@ -106,6 +106,9 @@
   .wrapper .search .select-field {
     min-width: 200px;
   }
+  .wrapper .sanatoriums__item .description {
+    font-size: .7em;
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -303,6 +306,9 @@
         width: 35px;
         height: 20px;
       }
+    }
+    .sanatoriums__item .description {
+      font-size: .8em;
     }
   }
   .button {
