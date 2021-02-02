@@ -31,7 +31,7 @@
     <div class="top-header">
         <div class="container">
             <div class="row top-header__content justify-content-md-between">
-                <div class="col-auto top-header__address d-flex align-items-center">
+                <div class="col-auto top-header__address  align-items-center d-none d-md-none d-sm-none d-xs-none d-lg-flex">
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/map.svg" alt="Адрес" title="Адрес">
                     <p>г. Москва</p>
                 </div>
@@ -93,6 +93,7 @@
                             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/search.svg" class="mobile-search js--mobile-search" title="Поиск" alt="Поиск">
                         </a>
                         <form action="" class="form-search js--mobile-search-form">
+                            <div class="close_search js--close_search"><span></span></div>
                             <div class="field">
                                 <input type="text" placeholder="Поиск санатория">
                             </div>
@@ -168,43 +169,44 @@
     <section class="head">
         <div class="container">
             <div class="head__content">
-                <div class="head__slider js--head__slider">
-                    <div class="head__slide">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="info">
-                                    <p class="sub-title">Санаторий</p>
-                                    <h1 class="title">Эко-курорт</h1>
-                                    <p class="description">Лучшие курорты: Республика Алтай, Чемальский район, с.
-                                        Чемал</p>
-                                    <a href="" class="button">Подробнее</a>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="head__body">
+                            <div class="head__slider js--head__slider">
+                                <div class="head__slide">
+                                    <div class="slide__content">
+                                        <div class="info">
+                                            <p class="sub-title">Санаторий</p>
+                                            <h1 class="title">Эко-курорт</h1>
+                                            <p class="description">Лучшие курорты: Республика Алтай,<br>Чемальский район, с.
+                                                Чемал</p>
+                                            <a href="" class="button">Подробнее</a>
+                                        </div>
+                                        <img class="main-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/mainBg.png" alt="Картинка" title="Картинка">
+                                    </div>
+                                </div>
+                                <div class="head__slide">
+                                    <div class="slide__content">
+                                        <div class="info">
+                                            <p class="sub-title">Санаторий</p>
+                                            <h1 class="title">Эко-курорт</h1>
+                                            <p class="description">Лучшие курорты: Республика Алтай,<br>Чемальский район, с.
+                                                Чемал</p>
+                                            <a href="" class="button">Подробнее</a>
+                                        </div>
+                                        <img class="main-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/mainBg.png" alt="Картинка" title="Картинка">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="main-img imgLoad" data-bg="img/mainBg.png"></div>
+                            <div class="head__nav">
+                                <button class="arrow prev js--head-slider-prev-arrow"><img src="data:image/gif;base64,R0lGODlhCwAGAIAAAP///wAAACH5BAEAAAEALAAAAAALAAYAAAIHjI+py+1fAAA7" data-src="img/nextArrow.svg" alt="Дальше" title="Дальше"></button>
+                                <button class="arrow next js--head-slider-next-arrow"><img src="data:image/gif;base64,R0lGODlhCwAGAIAAAP///wAAACH5BAEAAAEALAAAAAALAAYAAAIHjI+py+1fAAA7" data-src="img/nextArrow.svg" alt="Дальше" title="Дальше"></button>
                             </div>
                         </div>
-                    </div>
-                    <div class="head__slide">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="info">
-                                    <p class="sub-title">Санаторий</p>
-                                    <h1 class="title">Эко-курорт</h1>
-                                    <p class="description">Лучшие курорты: Республика Алтай, Чемальский район, с.
-                                        Чемал</p>
-                                    <a href="" class="button">Подробнее</a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="main-img imgLoad" data-bg="img/mainBg.png"></div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
-                <a href="javascript:void(0);" class="next-arrow js--head-slider-next-arrow">
-                    <img src="data:image/gif;base64,R0lGODlhCwAGAIAAAP///wAAACH5BAEAAAEALAAAAAALAAYAAAIHjI+py+1fAAA7" data-src="img/nextArrow.svg" alt="Дальше" title="Дальше">
-                </a>
+
             </div>
         </div>
     </section>
@@ -286,90 +288,102 @@
             <div class="row justify-content-between">
                 <div class="col-xl-4 col-sm-6 col-12">
                     <a href="" class="sanatoriums__item imgLoad" data-bg="img/sanatoriums/1.png">
-                        <span class="info">
-                            <span class="title">Ай-Даниль</span>
-                            <span class="sub-title">Санаторий крыма</span>
-                        </span>
-                        <span class="add-info">
-                            <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
-                            <span class="d-flex justify-content-between align-items-center">
-                                <span class="price">от<span>10 000 ₽</span></span>
-                                <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                        <span class="item__content">
+                            <span class="info">
+                                <span class="title">Ай-Даниль</span>
+                                <span class="sub-title">Санаторий крыма</span>
+                            </span>
+                            <span class="add-info">
+                                <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
+                                <span class="d-flex justify-content-between align-items-center">
+                                    <span class="price">от<span>10 000 ₽</span></span>
+                                    <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                                </span>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-xl-4 col-sm-6 col-12">
                     <a href="" class="sanatoriums__item imgLoad" data-bg="img/sanatoriums/1.png">
-                        <span class="info">
-                            <span class="title">Ай-Даниль</span>
-                            <span class="sub-title">Санаторий крыма</span>
-                        </span>
-                        <span class="add-info">
-                            <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
-                            <span class="d-flex justify-content-between align-items-center">
-                                <span class="price">от<span>10 000 ₽</span></span>
-                                <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                        <span class="item__content">
+                            <span class="info">
+                                <span class="title">Ай-Даниль</span>
+                                <span class="sub-title">Санаторий крыма</span>
+                            </span>
+                            <span class="add-info">
+                                <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
+                                <span class="d-flex justify-content-between align-items-center">
+                                    <span class="price">от<span>10 000 ₽</span></span>
+                                    <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                                </span>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-xl-4 col-sm-6 col-12">
                     <a href="" class="sanatoriums__item imgLoad" data-bg="img/sanatoriums/1.png">
-                        <span class="info">
-                            <span class="title">Ай-Даниль</span>
-                            <span class="sub-title">Санаторий крыма</span>
-                        </span>
-                        <span class="add-info">
-                            <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
-                            <span class="d-flex justify-content-between align-items-center">
-                                <span class="price">от<span>10 000 ₽</span></span>
-                                <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                        <span class="item__content">
+                            <span class="info">
+                                <span class="title">Ай-Даниль</span>
+                                <span class="sub-title">Санаторий крыма</span>
+                            </span>
+                            <span class="add-info">
+                                <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
+                                <span class="d-flex justify-content-between align-items-center">
+                                    <span class="price">от<span>10 000 ₽</span></span>
+                                    <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                                </span>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-xl-4 col-sm-6 col-12">
                     <a href="" class="sanatoriums__item imgLoad" data-bg="img/sanatoriums/1.png">
-                        <span class="info">
-                            <span class="title">Ай-Даниль</span>
-                            <span class="sub-title">Санаторий крыма</span>
-                        </span>
-                        <span class="add-info">
-                            <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
-                            <span class="d-flex justify-content-between align-items-center">
-                                <span class="price">от<span>10 000 ₽</span></span>
-                                <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                        <span class="item__content">
+                            <span class="info">
+                                <span class="title">Ай-Даниль</span>
+                                <span class="sub-title">Санаторий крыма</span>
+                            </span>
+                            <span class="add-info">
+                                <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
+                                <span class="d-flex justify-content-between align-items-center">
+                                    <span class="price">от<span>10 000 ₽</span></span>
+                                    <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                                </span>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-xl-4 col-sm-6 col-12">
                     <a href="" class="sanatoriums__item imgLoad" data-bg="img/sanatoriums/1.png">
-                        <span class="info">
-                            <span class="title">Ай-Даниль</span>
-                            <span class="sub-title">Санаторий крыма</span>
-                        </span>
-                        <span class="add-info">
-                            <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
-                            <span class="d-flex justify-content-between align-items-center">
-                                <span class="price">от<span>10 000 ₽</span></span>
-                                <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                        <span class="item__content">
+                            <span class="info">
+                                <span class="title">Ай-Даниль</span>
+                                <span class="sub-title">Санаторий крыма</span>
+                            </span>
+                            <span class="add-info">
+                                <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
+                                <span class="d-flex justify-content-between align-items-center">
+                                    <span class="price">от<span>10 000 ₽</span></span>
+                                    <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                                </span>
                             </span>
                         </span>
                     </a>
                 </div>
                 <div class="col-xl-4 col-sm-6 col-12">
                     <a href="" class="sanatoriums__item imgLoad" data-bg="img/sanatoriums/1.png">
-                        <span class="info">
-                            <span class="title">Ай-Даниль</span>
-                            <span class="sub-title">Санаторий крыма</span>
-                        </span>
-                        <span class="add-info">
-                            <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
-                            <span class="d-flex justify-content-between align-items-center">
-                                <span class="price">от<span>10 000 ₽</span></span>
-                                <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                        <span class="item__content">
+                            <span class="info">
+                                <span class="title">Ай-Даниль</span>
+                                <span class="sub-title">Санаторий крыма</span>
+                            </span>
+                            <span class="add-info">
+                                <span class="description">Санаторий расположен в живописном уголке Южного берега Крыма на территории парка «Ай-Даниль». Климат напоминает субтропический средиземноморский, акклиматизация проходит очень быстро и легко. Зимы для России очень теплые. Осень также теплая и продолжительная. Солнце сияет около 2300 часов в году. К слову, такие же показатели у Ниццы, Канн и Сан-Ремо.</span>
+                                <span class="d-flex justify-content-between align-items-center">
+                                    <span class="price">от<span>10 000 ₽</span></span>
+                                    <span class="link-arrow more">Подробнее<img src="data:image/gif;base64,R0lGODlhAQAIAIAAAP///wAAACH5BAEAAAEALAAAAAABAAgAAAIDjG8FADs=" data-src="img/nextArrowWhite.svg" alt="Подробнее" title="Подробнее"></span>
+                                </span>
                             </span>
                         </span>
                     </a>

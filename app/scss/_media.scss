@@ -7,9 +7,6 @@
 }
 
 @media screen and (max-width: 1365px) {
-  .wrapper .head__slide .info {
-    padding: 45px 5px 0 20%;
-  }
 
   .input-field {
     max-width: 145px;
@@ -38,9 +35,6 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .wrapper .head__slide .info {
-    padding: 45px 5px 0 15%;
-  }
   .wrapper .search.main-search {
     margin: 0 5%;
   }
@@ -77,10 +71,13 @@
   }
   .wrapper .head {
     &__slide {
-      .info {
-        padding-left: 10%;
+      .main-img{
+        height: 750px;
+        top: -20%;
       }
-
+      .slide__content{
+        padding-left: 50px;
+      }
       .sub-title {
         font-size: 1.7em;
       }
@@ -148,6 +145,15 @@
     font-size: 14px;
   }
   .header {
+    &.scroll{
+      top: -42px;
+    }
+    &__logo{
+      img{
+        height: 35px;
+        width: auto;
+      }
+    }
     &__burger {
       border: none;
       transition: all .3s;
@@ -158,36 +164,36 @@
 
       span {
         display: block;
-      }
-
-      span, &:before {
-        width: 100%;
         height: 1px;
+        width: 100%;
+        top: 5px;
         background-color: $green;
         transition: all .3s;
-
+        position: relative;
+        &:before{
+          content: '';
+          height: 1px;
+          width: 100%;
+          top: -12px;
+          background-color: $green;
+          position: absolute;
+          left: 0;
+        }
       }
-
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-
       &.active {
         span {
           transform: rotate(45deg);
-        }
-
-        &:before {
-          transform: rotate(-45deg);
-          top: 12px;
+          top: 0;
+          &:before {
+            transform: rotate(-85deg);
+            top: 0px;
+          }
         }
       }
     }
 
     .top-header {
+      padding: 10px 0;
       &__address,
       &__phone,
       &__request,
@@ -197,6 +203,7 @@
     }
 
     .header-content {
+      padding: 10px 0;
       &__menu {
         display: none;
       }
@@ -209,7 +216,7 @@
     overflow-y: auto;
 
     &.active {
-      z-index: 2;
+      z-index: 10;
       display: block;
       animation: openMobileMenu .5s;
       animation-fill-mode: both;
@@ -288,18 +295,28 @@
   }
   .wrapper {
     .head {
+      &__slider{
+        .slick-track{
+          padding-top: 180px;
+        }
+      }
       &__slide {
+        height: 300px;
+        .main-img{
+          height: 600px;
+          top: -30%;
+        }
         .info {
           padding: 0;
         }
         .sub-title {
-          font-size: 1.5em;
+          font-size: 2em;
         }
         .title {
-          font-size: 3em;
+          font-size: 3.5em;
         }
         .description {
-          font-size: .8em;
+          font-size: 1.2em;
         }
       }
       .next-arrow img {
@@ -313,7 +330,7 @@
   }
   .button {
     padding: 13px 44px;
-    font-size: .8em;
+    font-size: 1.1em;
   }
 }
 
@@ -327,15 +344,86 @@
     transform: scale(1);
   }
 }
-
+@media screen and(max-width: 768px){
+  .wrapper{
+    .head{
+      margin-top: 0;
+      &__nav{
+        .arrow{
+          margin-top: -30px;
+        }
+      }
+      &__slider{
+        .slick-track{
+          padding-top: 0;
+        }
+      }
+      &__slide{
+        height: 370px;
+        .slide__content{
+          padding-left: 0;
+          align-items: flex-start;
+        }
+        .info{
+          position: relative;
+          z-index: 2;
+        }
+        .main-img{
+          top: 0;
+        }
+        .sub-title{
+          font-size: 1.4em;
+        }
+        .title{
+          font-size: 2.5em;
+        }
+        .description{
+          font-size: 1em;
+        }
+        .button{
+          margin-bottom: 0;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 576px) {
   body{
     font-size: 12px;
   }
   .wrapper{
     padding-top: 90px;
+    .head{
+      margin-top: 20px;
+      &__slide{
+        height: 320px;
+        .main-img{
+          height: 300px;
+        }
+        .main-img{
+          top: 40%;
+        }
+        .button{
+          padding: 12px 30px;
+        }
+      }
+      &__nav{
+        .arrow{
+          top: 80%;
+        }
+        button{
+          img{
+            height: 15px;
+          }
+        }
+      }
+    }
   }
   .header {
+    &.scroll{
+      top: -38px;
+    }
     .header-content {
       padding: 10px 0;
 
@@ -343,17 +431,54 @@
         position: relative;
 
         .form-search {
-          display: none;
-          position: absolute;
-          right: -10px;
-          top: -12px;
-
-          &.active {
-            display: block;
+          display: flex;
+          position: fixed;
+          right: 0px;
+          top: -200px;
+          background-color: #f2f6f8;
+          width: 100%;
+          padding: 15px;
+          align-items: center;
+          transition: .4s all;
+          .close_search{
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            span{
+              display: block;
+              height: 1px;
+              width: 100%;
+              background-color: $green;
+              position: relative;
+              transform: rotate(45deg);
+              &:before{
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: $green;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: rotate(-85deg);
+              }
+            }
           }
-
+          &.active {
+            top: 0;
+            transition: .4s all;
+          }
+          .field{
+            width: 100%;
+          }
           .field input {
-            width: 280px;
+            width: 100%;
+            font-size: 1em;
+          }
+          button{
+            right: 28px;
           }
         }
 
@@ -364,14 +489,15 @@
     }
 
     &__logo {
+      align-items: center;
       img {
-        width: 38px;
-        height: 40px;
+        width: 25px;
+        height: auto;
         margin-right: 5px;
       }
 
       .title {
-        font-size: .9em;
+        font-size: 1.1em;
       }
 
       .description {
@@ -379,6 +505,7 @@
       }
     }
   }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -396,31 +523,6 @@
         a {
           font-size: .7em;
         }
-      }
-    }
-
-    &__burger {
-      width: 20px;
-      height: 20px;
-
-      &.active:before {
-        top: 9px;
-      }
-    }
-
-    &__logo {
-      img {
-        width: 35px;
-        height: 32px;
-        margin-right: 5px;
-      }
-
-      .title {
-        font-size: .8em;
-      }
-
-      .description {
-        font-size: .6em;
       }
     }
 

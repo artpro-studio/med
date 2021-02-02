@@ -60,6 +60,11 @@ $(function () {
         e.preventDefault();
         $('.js--mobile-search-form').toggleClass('active');
     });
+    $('.js--close_search').on('click', function (e) {
+        e.preventDefault();
+        $('.js--mobile-search-form').toggleClass('active');
+    });
+
     $(document).on('scroll', function (e) {
         if ($(window).scrollTop() > 10) {
             $('.js--header').addClass('scroll');
@@ -68,8 +73,9 @@ $(function () {
         }
     });
     $('.js--head__slider').slick({
-        prevArrow: false,
+        infinite: false,
         nextArrow: '.js--head-slider-next-arrow',
+        prevArrow: '.js--head-slider-prev-arrow',
     });
 
     $('.about_pages__gallery').slick({
