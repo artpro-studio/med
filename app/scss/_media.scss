@@ -106,6 +106,14 @@
   .wrapper .sanatoriums__item .description {
     font-size: .7em;
   }
+  .wrapper .main-about__content {
+    .title {
+      font-size: 3.5em;
+    }
+    .number__title {
+      font-size: 2em;
+    }
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -327,10 +335,37 @@
     .sanatoriums__item .description {
       font-size: .8em;
     }
+    .main-about__image {
+      width: 50%;
+      margin-top: 20px;
+    }
+    .main-about__content {
+      padding-left: 0;
+    }
+    .partners {
+      &__item {
+        padding: 0 20px;
+        img {
+          height: 48px;
+        }
+      }
+      .arrow {
+        top: 24px;
+      }
+    }
   }
   .button {
     padding: 13px 44px;
     font-size: 1.1em;
+  }
+  .footer {
+    text-align: center;
+    &__menu ul li {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -554,5 +589,8 @@
   .button {
     padding: 12px 40px;
     font-size: .8em;
+  }
+  .wrapper .partners__item img {
+    margin: auto;
   }
 }

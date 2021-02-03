@@ -119,6 +119,33 @@ $(function () {
         nextArrow: '.detail_slider_nav.next',
         prevArrow: '.detail_slider_nav.prev',
     });
+    $('.js--partners__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        prevArrow: '.js--partners__slider-prev-arrow',
+        nextArrow: '.js--partners__slider-next-arrow',
+        responsive: [
+            {
+                breakpoint: 991,
+                settings:{
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 650,
+                settings:{
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings:{
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
 
     $('.catalog__item .sliders').each(function (i, node) {
         $(node).slick({
