@@ -47,6 +47,7 @@ gulp.task('scripts', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-1.8.1/slick/slick.min.js',
 		'app/libs/fancybox/jquery.fancybox.min.js',
+		'app/libs/jquery.mask.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

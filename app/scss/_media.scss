@@ -114,6 +114,9 @@
       font-size: 2em;
     }
   }
+  .footer__menu ul li{
+    margin: 0px 7px;
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -359,12 +362,40 @@
     font-size: 1.1em;
   }
   .footer {
-    text-align: center;
-    &__menu ul li {
-      margin-right: 20px;
-      &:last-child {
-        margin-right: 0;
+    &__menu{
+      margin-bottom: 20px;
+      ul li {
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a{
+          font-size: 1em;
+        }
       }
+    }
+    &__logo{
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    &__menu{
+      ul{
+        justify-content: center;
+      }
+    }
+    &__contacts{
+      display: flex;
+      justify-content: center;
+    }
+    &__documents{
+      text-align: center;
+    }
+    &__social{
+      text-align: center;
+    }
+    &__emblem{
+      display: flex;
+      justify-content: center;
     }
   }
 }
@@ -540,7 +571,46 @@
       }
     }
   }
-
+  .section-description{
+    margin-bottom: 20px;
+  }
+  .link-arrow{
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  .wrapper{
+    .sanatoriums{
+      &__item{
+        height: 200px;
+        padding: 20px;
+        .item__content{
+          height: 38px;
+        }
+      }
+    }
+  }
+  .footer{
+    &__menu{
+      ul{
+        display: block !important;
+        column-count: 2;
+        li{
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &__mail{
+      text-align: center;
+    }
+    &__documents{
+      text-align: center;
+      a{
+        display: block;
+        margin-bottom: 7px;
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

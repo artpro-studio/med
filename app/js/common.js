@@ -52,6 +52,8 @@ itemsBg.forEach(item => {
 })
 
 $(function () {
+    $('.phone_mask').mask('+7 (999) 999 99-99');
+
     $('.js--burger').on('click', function () {
         $('.js--burger').toggleClass('active');
         $('.js--mobile_header').toggleClass('active');
