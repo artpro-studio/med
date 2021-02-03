@@ -151,6 +151,11 @@
     min-width: 150px;
   }
 }
+@media screen and (max-width: 1010px) {
+  .header .top-header__phone {
+    margin-right: 50px;
+  }
+}
 @media screen and (max-width: 991px) {
   body{
     font-size: 14px;
@@ -302,7 +307,10 @@
     max-width: unset;
   }
   .input-field label, .select-field label {
-    font-size: .7em;
+    font-size: .9em;
+  }
+  .select-field select, .input-field input {
+    font-size: .8em;
   }
   .wrapper {
     .head {
@@ -319,15 +327,6 @@
         }
         .info {
           padding: 0;
-        }
-        .sub-title {
-          font-size: 2em;
-        }
-        .title {
-          font-size: 3.5em;
-        }
-        .description {
-          font-size: 1.2em;
         }
       }
       .next-arrow img {
@@ -356,6 +355,48 @@
         top: 24px;
       }
     }
+    .sanatoriums__item {
+      .title {
+        font-size: 1.5em;
+      }
+      .sub-title {
+        font-size: 1.1em;
+      }
+     .description {
+       font-size: .9em;
+     }
+      .price {
+        font-size: 1.1em;
+      }
+      .more {
+        font-size: 1em;
+      }
+    }
+    .section-description {
+      font-size: 1.2em;
+    }
+    .advantages__item {
+      .title {
+        font-size: 1.1em;
+      }
+      .description {
+        font-size: 1em;
+      }
+    }
+     .main-about__content {
+       .number {
+         &__title {
+           font-size: 2.3em;
+         }
+
+         &__description {
+           font-size: 1.1em;
+         }
+       }
+       .info {
+         font-size: 1em;
+       }
+     }
   }
   .button {
     padding: 13px 44px;
@@ -452,6 +493,9 @@
         }
       }
     }
+     .sanatoriums__item .description {
+       font-size: .8em;
+     }
   }
 }
 @media screen and (max-width: 576px) {
@@ -582,12 +626,29 @@
     .sanatoriums{
       &__item{
         height: 200px;
-        padding: 20px;
+        padding: 10px;
         .item__content{
           height: 38px;
         }
+        .description {
+          font-size: 1em;
+          margin: 5px 0;
+        }
       }
     }
+    .main-about__content .number__title  {
+      font-size: 2em;
+    }
+  }
+  .input-field label, .select-field label {
+    font-size: 1em;
+  }
+  .input-field input, .select-field select {
+    font-size: 1em;
+  }
+  .link-arrow {
+    font-size: 1em;
+    margin-bottom: 0;
   }
   .footer{
     &__menu{
